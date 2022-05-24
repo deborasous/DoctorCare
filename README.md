@@ -13,14 +13,14 @@ O projeto simula um site de apresentação de serviços de uma clínica. Com obj
 
 
 ## Aplicação
-![Responsive simulator](![doctorcareGif](https://user-images.githubusercontent.com/59830792/170114904-997f3f86-25fc-4940-8c80-4691875a8032.gif)
+![Responsive simulator](https://user-images.githubusercontent.com/59830792/170114904-997f3f86-25fc-4940-8c80-4691875a8032.gif)
 
 
 ## Ferramentas e tecnologias utilizadas
-- HTML
-- Javascript
-- Tailwindcss
-- Swiperjs
+- `HTML`
+- `Javascript`
+- `Tailwindcss`
+- `Swiperjs`
 
 
 <h4 align="center"> 
