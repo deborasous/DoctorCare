@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+
+    /*===TEXT===*/
+    .titleH1 {
+        @apply text-[2.125rem] leading-[130%] mb-6  font-bold text-secundary-color-dark 
+        sm:text-[2.5rem] 
+        md:text-[3.1875rem]
+    }
+
+    .titleH2 {
+        @apply text-[1.875rem] leading-[120%] font-bold text-secundary-color-dark  mb-[3.75rem]
+        md:text-[2.5rem] md:mx-auto
+    }
+
+    .titleH3 {
+        @apply text-[1.5rem] font-bold text-secundary-color-dark 
+    }
+
+    .titleH4 {
+        @apply text-[0.875rem] font-bold text-primary-color-300 uppercase tracking-wide mb-4 
+    }
+
+    .titleH5 {
+        @apply text-[3rem] font-bold text-secundary-color-dark mb-2 leading-[130%]
+    }
+
+    .paragraphBase {
+        @apply text-[1rem] leading-7 font-normal text-secundary-gray bg-secundary-gray-light
+    }
+
+    .paragraphHome {
+        @apply text-[1.125rem]
+    }
+
+    .paragraphColor {
+        @apply text-primary-color-300 
+        mb-[4rem] leading-6 lg:mb-0
+    }
+
+
+    /*===BG===*/
+    .wrapper {
+        @apply mx-auto px-6 text-center grid-cols-1 max-w-[75rem]
+    }
+
+    .wrapperLeft {
+        @apply mx-auto px-6 text-left grid-cols-1
+    }
+
+    .image {
+        @apply  w-full h-auto m-auto
+       
+    }
+}
+
+
+@layer components {
+    /*==BUTTONS*/
+    .contactButton {
+        @apply font-bold text-primary-color-100 align-middle py-4 px-8 flex gap-2 m-auto mt-8 mb-14 rounded-[50rem] w-fit bg-primary-color-300 
+         md:mt-8 md:mb-16
+         lg:mx-0
+    }
+
+    .contactButton:hover {
+        @apply bg-primary-color-hover
+    }
+
+    .secundaryButton {
+        @apply font-bold text-primary-color-300 align-middle py-2.5 px-6 flex gap-2 m-auto rounded-[50rem] w-fit bg-primary-color-100
+    }
+
+    .secundaryButton:hover {
+        @apply bg-primary-color-hover
+    }
+
+     /*==CARDS==*/
+     .cards {
+        @apply py-6 px-6 rounded-lg bg-primary-color-100 text-left 
+    }
+
+    /*==HEADER===*/
+    .headerSection {
+        @apply pt-28 pb-[12rem] w-full
+        lg:pb-12 bg-primary-color-200
+    }
+
+    .wrapperHeader {
+        @apply relative mx-auto px-6 text-center flex justify-center max-w-[75rem]
+        lg:grid-cols-2 lg:flex 
+    }
+
+    .header {
+        @apply lg:flex lg:w-full
+    }
+
+    .headerContent {
+        @apply max-w-[37.8125rem]
+        lg:my-auto lg:mr-auto lg:text-left
+    }
+
+    .imageHeader {
+        @apply  max-w-[31rem] h-auto m-auto
+       
+    }
+
+    .bgStats {
+        @apply bg-tertiary-color rounded-lg py-16 px-[8rem] m-auto  absolute top-[59rem] z-10
+        sm:top-[59rem]
+        md:top-[61rem] md:absolute
+        lg:flex lg:top-[36rem]  lg:w-full  lg:max-w-[75rem] lg:absolute/*ver como manter fixo*/
+    }
+
+    .bgStat {
+        @apply mx-auto
+        lg:mx-0
+    }
+
+    .divider {
+        @apply w-0.5 h-[5.625rem] bg-primary-color-300 sr-only 
+        lg:not-sr-only lg:mx-auto
+    } 
+
+
+    /*==SERVICE===*/
+    .serviceSection {
+        @apply pt-[23rem] pb-[4.6875rem] w-full bg-secundary-gray-light
+        lg:pt-56 lg:text-center 
+    }
+
+    .wrap {
+        @apply grid gap-8
+        lg:grid lg:grid-cols-2
+        xl:grid-cols-3 xl:gap-8
+    }
+    
+    
+    /*==ABOUT===*/ 
+    .aboutSection {
+        @apply pt-[4.6875rem] pb-[4.6875rem] w-full bg-tertiary-color
+    }
+
+    .about {
+        @apply lg:flex lg:justify-center lg:relative
+    }
+    
+
+    .aboutContent {
+       @apply w-full
+       lg:mr-9
+       xl:mr-9 xl:text-left xl:max-w-[37.8125rem] 
+    }
+
+    
+    /*==TESTIMONY===*/
+    .testimonySection {
+        @apply pt-[4.6875rem] pb-[4.6875rem] w-full
+    } 
+
+    .testimonyContent {
+        @apply text-center m-auto
+    }
+
+    .spanMarks {
+        @apply text-6xl font-serif leading-10 block text-primary-color-300
+    }
+
+    .cardTestimony {
+        @apply py-8 px-8 rounded-lg bg-primary-color-200 text-left 
+    }
+
+
+    /*==companies===*/
+    .companies {
+        @apply py-[4.6875rem]
+    }
+
+    .companyContent{
+        @apply flex justify-center items-center
+    }
+
+    .imageCompanies {
+        @apply text-primary-color-300
+    }
+
+    .swiper-slide{
+        @apply max-w-[11rem]
+    }
+
+     /*==CONTACT===*/
+     .contactSection {
+        @apply pt-[4.6875rem] pb-[4.6875rem] w-full bg-primary-color-100
+     }
+
+     .contact {
+        @apply lg:flex lg:justify-between items-center
+     }
+
+     .contactContent {
+        @apply w-full
+        lg:mr-9
+       xl:mr-9 xl:text-left xl:max-w-[37.8125rem] 
+     }
+
+    /*==FOOTER===*/
+    .footerSection {
+        @apply pt-[4.6875rem] pb-[4.6875rem] w-full  bg-primary-color-300 text-primary-color-100
+    }
+
+    .bgfooter {
+        @apply bg-primary-color-300 text-primary-color-100 
+    }
+
+    .socialLinks {
+        @apply flex gap-8
+    }
+}
+
+
+
+@layer utilities {
+    .grid16 {
+        @apply grid gap-4
+    }
+
+    .grid32 {
+        @apply grid gap-8
+    }
+
+    .gridRow16 {
+        @apply flex gap-4 items-center
+    }
+
+    .spaceBet {
+        @apply flex justify-between
+    }
+
+    .circleImage {
+        @apply inline-block h-[3.125rem] w-[3.125rem] rounded-full 
+    }
+
+    .circleSocialLink {
+        @apply flex h-[3.125rem] w-[3.125rem] rounded-full bg-primary-color-200 justify-center 
+    }
+
+}
